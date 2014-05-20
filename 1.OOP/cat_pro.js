@@ -8,7 +8,7 @@ function Cat (name) {
   Animal.call(this, name);
 };
 Cat.prototype = new Animal();
-// Override
+// Override makeSound()
 Cat.prototype.makeSound = function () {
   console.log('meow~');
 };
